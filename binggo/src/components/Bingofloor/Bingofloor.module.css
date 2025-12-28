@@ -1,0 +1,35 @@
+.bingofloorBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 12px;
+
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.checked {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}

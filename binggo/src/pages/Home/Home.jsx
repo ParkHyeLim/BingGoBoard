@@ -1,8 +1,12 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import styles from './Home.module.css';
 import logoImage from '../../assets/images/logo.jpg';
 
 function Home() {
+  const navigate = useNavigate()
+
   const [userId, setUserId] = useState('')
   const [password, setPassword] = useState('')
   const [massage, setMassage] = useState('정보를 입력해주세요')
@@ -15,7 +19,7 @@ function Home() {
     } else {
       console.log('아이디:', userId)
       console.log('비밀번호:', password)
-      alert('확인 버튼 클릭!')
+      navigate('/bingo')
     }
   }
 

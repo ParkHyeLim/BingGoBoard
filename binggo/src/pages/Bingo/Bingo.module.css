@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /* 가로 가운데 */
+  align-items: center;
+  /* 세로 가운데 */
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbbbbb;
+
+}
+
+
+.bingoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  width: 30vw;
+  height: 100vh;
+
+  background-color: #FFFFFF;
+}
+
+.image {
+  margin: 4vh 0 2vh 0;
+  width: 10vw;
+}
+
+.massageBox{
+  margin: 4vh 0 0 0;
+}
+
+.inputBox {
+  margin: 2vh 0 0 0;
+
+  padding: 0.5vh 0;
+  text-align: center;
+  width: 15vw;
+}
+
+.buttonBox{
+  margin-top: 1vh;
+
+  padding: 0.5vh 0;
+  width: 15vw;
+}
